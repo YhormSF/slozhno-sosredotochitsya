@@ -185,9 +185,8 @@ margin-block-end: 80px;
 .main__section_title {
 color: var(--accent-color);
 font-weight: 700;
-
+/* font-size: 18px; */
 /* ! что-то с размером шрифта */
-font-size: 14px;
 
 
 /* width: 30.76vw; */
@@ -302,7 +301,7 @@ font-weight: 400;
 
 /* ! проблема с шрифтом */
 .qqq {
-font-size: 14px;
+
 }
 
 

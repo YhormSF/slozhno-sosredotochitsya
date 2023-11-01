@@ -3,8 +3,7 @@
 .page {
   /* сохраните в разметке и стилях класс page. 
   На его основе работает скрипт. */
-/* background-image: url(/images/cover-image-dark.png); */
-background-color: var(--color-with-accent);
+background-image: url(/images/cover-image-dark.png);
 background-attachment: fixed;
 
 
@@ -13,21 +12,24 @@ background-attachment: fixed;
 /* шапка */
 .header {
   display: grid;
-  grid-template-rows: 0 1fr 1fr;
+  grid-template-rows: 1fr auto 1fr;
 
-  background-image: url(/images/cover-image-dark.png);
-  background-size: cover;
-  background-repeat: no-repeat;
 
-  inline-size: 1024px;
-  block-size: 768px;
 
+  /* ! разрешение (не очень адаптивно) */
+  /* inline-size: 1024px;
+  block-size: 768px; */
+
+  block-size: 88vh;
   font-family: var(--main-font);
 
+  /* !паддинг не влияет на фокус */
+  padding: 20px;
   margin-block-end: 60px;
 }
 
-.decorated-zone::before {
+/* !декоративные уголки */
+/* .decorated-zone::before {
 content: '';
 display: block;
 width: 25px;
@@ -41,18 +43,17 @@ inset-inline-end: var(--main-gap-decoration);
 inset-block-start: var(--main-gap-decoration);
 }
 
-/* декоративные уголки */
 .decorated-zone::after {
 content: '';
 display: block;
 width: 25px;
 height: 25px;
-border-top:  1px solid var(--accent-color);
-border-right:  1px solid var(--accent-color);
+border-bottom:  1px solid var(--accent-color);
+border-left:  1px solid var(--accent-color);
 
 inset-inline-start: var(--main-gap-decoration);
 inset-block-end: var(--main-gap-decoration);
-}
+} */
 
 /* ! вылезает за экран при фуллскрине */
 /* надпись REC */
@@ -82,14 +83,12 @@ left: calc(100% - 82px);
 }
 
 
-
-
 /* стилизация меню тем */
 
 .header__theme-menu {
-display: flex;
+display: grid;
+align-content: space-between;
 justify-content: center;
-block-size: 26px;
 }
 
 .header__theme-menu-list {
@@ -101,12 +100,11 @@ block-size: 26px;
   font-style: normal;
   font-weight: 400;
   line-height: 18px; /* 100% */
-  gap: 10px;
+  gap: 25px;
 }
 
 .header__theme-menu-item {
   display: flex;
-  /* padding-block: 0 13px 0 13px; */
 
 }
 .header__theme-menu-button {
@@ -121,19 +119,20 @@ block-size: 26px;
 .header__theme-menu-button_type_light {}
 
 /* заголовок + параграф */
+
+
+
+
 .header__title-focus {
-
-
+  display: grid;
+  position: relative;
+  inset-inline-end: 2%;
   color: var(--focus-color);
   text-shadow: 4px 4px 0px #FF0070;
-  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  font-size: var(--focus-font-size);
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%; /* 129.525px */
-
-  /* max-height: 192px; */
-
-  /* margin-block-end: 114px; */
 }
 
 .title-decor {
@@ -141,18 +140,25 @@ block-size: 26px;
 }
 
 .header__title {
+display: grid;
+
+justify-content: end;
+align-items: center;
 color: var(--color-with-accent);
 font-size: 18px;
 font-style: normal;
 font-weight: 700;
 line-height: 23.4px; /* 130% */
 
-max-width: 491px;
+
+/* max-width: 491px; */
 /* перенос текста "ИЛИ..."  */
 white-space: pre-line;
 
-margin-block-end: 110px;
-margin-inline-start: 50%;
+
+
+/* margin-block-end: 110px;
+margin-inline-start: 50%; */
 }
 
 
@@ -165,8 +171,35 @@ margin-inline-start: 50%;
   line-height: 23.4px; /* 130% */
 }
 
+/* блок со всеми шрифтами */
 
 
+/* заголовки секций */
+.main__section_title {
+  color: var(--accent-color);
+  font-family: inherit;
+  /* ! что-то с размером шрифта (при 14px нормально) */
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 700;
+  }
+  
+/* заголовки с выделенным бекграундом */
+.main__title-accent {
+  color: var(--color-with-accent);
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  }
+  
+  /* параграфы */
+  .main__paragraph {
+  color: var(--paragraph-font-color);
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 400;
+  }
 
 
 
@@ -182,15 +215,6 @@ padding-inline-end: 20px;
 margin-block-end: 80px;
 }
 
-.main__section_title {
-color: var(--accent-color);
-font-weight: 700;
-/* font-size: 18px; */
-/* ! что-то с размером шрифта */
-
-
-/* width: 30.76vw; */
-}
 
 .main__section-why_container-text {
   display: flex;
@@ -204,15 +228,7 @@ font-weight: 700;
   gap: 10px;
 }
 
-.main__title-accent {
-color: var(--color-with-accent);
-}
 
-.main__paragraph {
-color: var(--paragraph-font-color);
-font-weight: 400;
-
-}
 
 
 
@@ -271,10 +287,6 @@ font-weight: 400;
 }
 
 /* заголовок слева */
-.www {
-
-}
-
 
 
 .main__section-recommendation .main__title_accent {
@@ -309,22 +321,24 @@ font-weight: 400;
 
 /* ! секция с картинками */
 .main__section-img {
-
-
-
   padding-inline-start: 20px;
   padding-inline-end: 20px;
-
   margin-block-end: 60px;
-
 }
+
+
 
 
 .main__section-img_content {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr); */
+
+  grid-template-columns: repeat(3, minmax(min-content, max-content));
+  grid-template-rows: repeat(3, minmax(min-content, max-content));
+
+
   margin-block-start: 20px;
 }
 
@@ -379,6 +393,71 @@ display: grid;
 
 /* футер */
 .footer {
+  /* display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center; */
+
+
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  /* justify-content: center;
+  align-items: center; */
+
+  block-size: 88vh;
+
   padding-inline-start: 20px;
   padding-inline-end: 20px;
 }
+
+.footer_title {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  font-family: var(--main-font);
+  color: var(--focus-color);
+  font-size: var(--focus-font-size);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%; /* 129.525px */
+}
+
+
+/* декоративные уголки */
+.footer_decorated-zone::before {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-top:  1px solid var(--accent-color);
+  border-right:  1px solid var(--accent-color);
+  position: relative;
+  /* left: calc(65% + 14px);
+  bottom: calc(36% - 2px); */
+
+  left: calc(100% - 25px);
+  top: 20px;
+
+  /* inset-inline-end: var(--main-gap-decoration);
+  inset-block-start: var(--main-gap-decoration); */
+  }
+  
+  .footer_decorated-zone::after {
+  content: '';
+  display: block;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border-bottom:  1px solid var(--accent-color);
+  border-left:  1px solid var(--accent-color);
+  
+  /* top: calc(35% + 6px);
+  right: calc(26% - 1px); */
+
+  bottom: 80%;
+
+  /* inset-inline-start: var(--main-gap-decoration);
+  inset-block-end: var(--main-gap-decoration); */
+  }

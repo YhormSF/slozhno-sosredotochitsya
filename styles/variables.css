@@ -6,6 +6,7 @@
 /* шрифты */
 :root {
   --main-font: 'IBM Plex Mono', 'Bold Regular';
+  --focus-font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
 }
 
 /* темная тема */

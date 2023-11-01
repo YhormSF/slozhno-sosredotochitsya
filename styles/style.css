@@ -20,7 +20,7 @@ background-attachment: fixed;
   /* inline-size: 1024px;
   block-size: 768px; */
 
-  block-size: 88vh;
+  block-size: 100vh;
   font-family: var(--main-font);
 
   /* !паддинг не влияет на фокус */
@@ -405,7 +405,7 @@ display: grid;
   /* justify-content: center;
   align-items: center; */
 
-  block-size: 88vh;
+  block-size: 100vh;
 
   padding-inline-start: 20px;
   padding-inline-end: 20px;

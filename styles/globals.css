@@ -41,3 +41,40 @@ a {
   line-height: inherit;
 }
 
+/* сброс фокуса у кнопок и ссылок */
+button:focus,
+a:focus {
+outline: none;
+}
+
+
+/* фокус кнопок */
+button:focus-visible {
+  border-bottom: 1px solid var(--border-button-color);
+}
+
+/* активная кнопка не будет реагировать и обводится */
+button:disabled {
+  pointer-events: none;
+  border: 1px solid var(--border-button-color);
+}
+
+button:hover {
+  border: 1px solid var(--accent-color-hover);
+}
+
+
+/* стилизация ссылок */
+a {
+  text-decoration-line: none;
+  text-shadow: 2px 2px 0px #FF0070;
+}
+
+a:focus-visible {
+  border: 1px solid var(--border-a-color);
+}
+
+a:hover {
+  border-bottom: 1px solid var(--border-a-color);
+}
+

@@ -41,6 +41,11 @@ a {
   line-height: inherit;
 }
 
+button {
+  padding-left: 13px;
+  padding-right: 13px;
+  }
+
 /* сброс фокуса у кнопок и ссылок */
 button:focus,
 a:focus {

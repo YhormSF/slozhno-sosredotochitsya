@@ -510,9 +510,10 @@ display: grid;
   left: 81%
 }
 
-.decorated-zone::after {
+/* в пикселе нормально, но в автотесте она выше */
+/* .decorated-zone::after {
   bottom: 0%;
-}
+} */
 
 
 .header__theme-menu {

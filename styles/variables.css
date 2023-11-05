@@ -8,7 +8,10 @@
   --main-font: 'IBM Plex Mono', 'Bold Regular';
   /* --focus-font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem); */
   --focus-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  --main-gap-decoration: 20px;
+  --main-padding-decoration: 20px;
+  --header-and-footer-margin-section: 60px;
+  --main-margin-section: 80px;
+  --section-img-margin: 20px;
 }
 
 /* темная тема */
@@ -22,4 +25,16 @@
 
   --border-button-color: #FF0070;
   --border-a-color: #F1B2CE;
+}
+
+
+@media (max-width: 576px) {
+  :root {
+    --main-padding-decoration: 10px;
+    --focus-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --header-and-footer-margin-section: 40px;
+    --main-margin-section: 50px;
+    --section-img-margin: 10px;
+  }
+  
 }

@@ -15,7 +15,25 @@
   --accent-color: #FF0070;
   --accent-color-hover: #ff007066;
   --paragraph-font-color: #F1B2CE;
-
   --border-button-color: #FF0070;
   --border-a-color: #F1B2CE;
+}
+
+/* включение декоративного элемента REC */
+.page.theme_dark .header__decoration {
+  display: block;
+}
+
+/* авто темная, дублирование */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-image: url(/images/cover-image-dark.png);
+    --focus-color: #DB00FF;
+    --color-with-accent: #000028;
+    --accent-color: #FF0070;
+    --accent-color-hover: #ff007066;
+    --paragraph-font-color: #F1B2CE;
+    --border-button-color: #FF0070;
+    --border-a-color: #F1B2CE;
+  }
 }

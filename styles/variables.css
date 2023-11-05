@@ -6,7 +6,6 @@
 /* общее */
 :root {
   --main-font: 'IBM Plex Mono', 'Bold Regular';
-  /* --focus-font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem); */
   --focus-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --main-padding-decoration: 20px;
   --header-and-footer-margin-section: 60px;
@@ -22,7 +21,7 @@
   --accent-color: #FF0070;
   --accent-color-hover: #ff007066;
   --paragraph-font-color: #F1B2CE;
-
+  
   --border-button-color: #FF0070;
   --border-a-color: #F1B2CE;
 }

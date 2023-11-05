@@ -67,6 +67,7 @@ inset-block-end: var(--main-padding-decoration);
 /* ! надпись REC */
 
 .header__decoration {
+display: block;
 color: var(--accent-color);
 position: absolute;
 font-size: 18px;
@@ -502,10 +503,6 @@ display: grid;
 
 @media (max-width: 576px) {
 
-.header {
-
-}
-
 .header__decoration {
   left: 81%
 }
@@ -535,8 +532,6 @@ padding-right: 13px;
 .header__title-focus {
   position: static;
 }
-
-
 
   .main__section-why {
     grid-template-columns: none;

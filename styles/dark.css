@@ -26,6 +26,11 @@
   display: block;
 }
 
+ /* убирание тени футера */
+.page.theme_dark .footer_title {
+  text-shadow: none;
+}
+
 /* авто темная, дублирование */
 @media (prefers-color-scheme: dark) {
   :root {
@@ -39,5 +44,10 @@
     --border-button-color: #FF0070;
     --border-a-color: #F1B2CE;
     --title-section-color: #FF0070;
+  }
+
+  /* убирание тени футера */
+  .footer_title {
+    text-shadow: none;
   }
 }

@@ -1,10 +1,10 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
-.page {
-  /* сохраните в разметке и стилях класс page. 
+ /* сохраните в разметке и стилях класс page. 
   На его основе работает скрипт. */
-  background-image: var(--bg-image);
+
+  .page {
   background-color: var(--bg-color);
+  background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -17,8 +17,7 @@
   margin-block-end: var(--header-and-footer-margin-section);
   padding: var(--main-padding-decoration);
   font-family: var(--main-font);
-  /* ! не забыть */
-  /* block-size: 100vh; */
+  block-size: 100vh;
 }
 
 /* !декоративные уголки */
@@ -28,12 +27,10 @@
   content: "";
   position: absolute;
   justify-self: end;
-
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
   inline-size: 25px;
   block-size: 25px;
-
   inset-inline-end: var(--main-padding-decoration);
   inset-block-start: var(--main-padding-decoration);
 }
@@ -46,7 +43,6 @@
   border-left: 1px solid var(--accent-color);
   inline-size: 25px;
   block-size: 25px;
-
   inset-inline-start: var(--main-padding-decoration);
   inset-block-end: var(--main-padding-decoration);
 }
@@ -142,8 +138,6 @@
   font-size: 18px;
   font-style: normal;
   line-height: 130%; /* 23.4px; */
-  /* для переноса текста "ИЛИ..."  */
-
 }
 
 /* мейн */
@@ -207,8 +201,6 @@
 .main__section-what {
   display: grid;
   margin-block-end: var(--main-margin-section);
-  /* grid-template-columns: 1fr 2fr; */
-  /* grid-template-rows: 1fr 1fr; */
   padding-inline-start: var(--main-padding-decoration);
   padding-inline-end: var(--main-padding-decoration);
 }
@@ -320,8 +312,7 @@
   grid-template-rows: min-content 1fr min-content;
   margin-block-start: var(--header-and-footer-margin-section);
   padding: var(--main-padding-decoration);
-  /* ! не забыть */
-  /* block-size: 100vh; */
+  block-size: 100vh;
 }
 
 .footer_title {
@@ -362,42 +353,6 @@
   height: 25px;
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
-
-  /* inset-inline-start: var(--main-padding-decoration);
-  inset-block-end: var(--main-padding-decoration); */
-}
-
-/* ! для проверки разрешений */
-.header {
-  /* ! 1024 */
-  /* inline-size: 1024px;
-  block-size: 768px; */
-
-  /* ! 768 */
-  /* width: 768px;
-  height: 1024px; */
-
-  /* ! 375 */
-  /* width: 375px;
-  height: 668px; */
-
-  block-size: 100vh;
-}
-
-.footer {
-  /* ! 1024 */
-  /* width: 1024px;
-  height: 768px; */
-
-  /* ! 768 */
-  /* height: 1024px;
-  width: 768px; */
-
-  /* ! 375 */
-  /* width: 375px;
-  height: 667px; */
-
-  block-size: 100vh;
 }
 
 /* ! 1440 (1024) */

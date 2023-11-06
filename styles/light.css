@@ -9,7 +9,8 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --background-image: url(/images/cover-image-light.png);
+  --bg-image: url(/images/cover-image-light.png);
+  --bg-color: white;
   --focus-color: #FFC2E6;
   --color-with-accent: #353430;
   --accent-color: #ff8dcb;
@@ -28,7 +29,7 @@
 /* авто светлая, дублирование */
 @media (prefers-color-scheme: light) {
   :root {
-    --background-image: url(/images/cover-image-light.png);
+    --bg-image: url(/images/cover-image-light.png);
     --focus-color: #FFC2E6;
     --color-with-accent: #353430;
     --accent-color: #ff8dcb;

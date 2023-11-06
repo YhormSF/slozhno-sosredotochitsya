@@ -3,7 +3,8 @@
 .page {
   /* сохраните в разметке и стилях класс page. 
   На его основе работает скрипт. */
-  background-image: var(--background-image);
+  background-image: var(--bg-image);
+  background-color: var(--bg-color);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -487,8 +488,9 @@
     left: calc(90% + -4px);
   }
 
+  /* проблема при автотесте (было -53%) */
   .decorated-zone::after {
-    bottom: -53%;
+    bottom: 0%;
   }
 
   .main__section-what_title {

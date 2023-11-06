@@ -51,10 +51,7 @@
   inset-block-end: var(--main-padding-decoration);
 }
 
-/* ! пофиксить расположение при <1024 */
-
-/* ! надпись REC */
-
+/* надпись REC */
 .header__decoration {
   position: absolute;
   left: calc(92% + 3px);
@@ -67,8 +64,7 @@
   line-height: 138.889%;
 }
 
-/* ! кружочек */
-
+/* кружочек */
 .header__decoration::after {
   content: "";
   position: absolute;
@@ -118,7 +114,6 @@
 .header__theme-menu-button_type_light {} */
 
 /* заголовок + параграф */
-
 .header__title-focus {
   position: relative;
   display: grid;
@@ -148,6 +143,7 @@
   font-style: normal;
   line-height: 130%; /* 23.4px; */
   /* для переноса текста "ИЛИ..."  */
+
 }
 
 /* мейн */
@@ -458,6 +454,10 @@
   .header__decoration::after {
     left: 110%;
   }
+
+  .decorated-zone::after {
+    bottom: 3%;
+  }
 }
 
 
@@ -465,6 +465,10 @@
 @media (max-width: 768px) {
   .header {
     grid-template-columns: 1fr 1fr auto;
+  }
+
+  .header__decoration::after {
+    left: 125%;
   }
 
   .header__theme-menu {
@@ -529,10 +533,10 @@
 
 /* ! 576 (375) */
 @media (max-width: 576px) {
-  .header__decoration {
-    left: 89%;
-  }
 
+  .header__decoration {
+    left: 82%;
+  }
 
   /* в пикселе нормально, но в автотесте она выше */
   .decorated-zone::after {
@@ -555,6 +559,10 @@
 
   .header_container_paragraph {
     grid-column: 3/3;
+  }
+
+  .header__paragraph {
+    margin: 0;
   }
 
   .main__section-why {

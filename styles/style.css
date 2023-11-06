@@ -163,7 +163,7 @@
 
 /* заголовки секций */
 .main__section_title {
-  color: var(--accent-color);
+  color: var(--title-section-color);
   font-family: inherit;
   font-weight: 700;
   font-size: inherit;
@@ -333,7 +333,6 @@
   justify-content: center;
   align-items: center;
   color: var(--focus-color);
-
   font-family: var(--main-font);
   font-weight: 700;
   font-size: var(--focus-font-size);
@@ -453,6 +452,15 @@
   }
 }
 
+/* для фикса REC */
+@media (max-width: 992px) {
+
+  .header__decoration::after {
+    left: 110%;
+  }
+}
+
+
 /* ! 768 */
 @media (max-width: 768px) {
   .header {
@@ -522,8 +530,9 @@
 /* ! 576 (375) */
 @media (max-width: 576px) {
   .header__decoration {
-    left: 81%;
+    left: 89%;
   }
+
 
   /* в пикселе нормально, но в автотесте она выше */
   .decorated-zone::after {

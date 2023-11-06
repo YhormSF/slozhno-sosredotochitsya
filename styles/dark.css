@@ -18,6 +18,7 @@
   --paragraph-font-color: #F1B2CE;
   --border-button-color: #FF0070;
   --border-a-color: #F1B2CE;
+  --title-section-color: #FF0070;
 }
 
 /* включение декоративного элемента REC */
@@ -29,6 +30,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-image: url(/images/cover-image-dark.png);
+    --bg-color: black;
     --focus-color: #DB00FF;
     --color-with-accent: #000028;
     --accent-color: #FF0070;
@@ -36,5 +38,6 @@
     --paragraph-font-color: #F1B2CE;
     --border-button-color: #FF0070;
     --border-a-color: #F1B2CE;
+    --title-section-color: #FF0070;
   }
 }

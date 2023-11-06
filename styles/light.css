@@ -15,9 +15,10 @@
   --color-with-accent: #353430;
   --accent-color: #ff8dcb;
   --accent-color-hover: #32312d66;
-  --paragraph-font-color: #F1B2CE;
+  --paragraph-font-color: #353430;
   --border-button-color: #353430;
   --border-a-color: #353430;
+  --title-section-color: #353430;
 }
 
 /* пропадание декоративного элемента REC */
@@ -25,21 +26,34 @@
   display: none;
 }
 
+  /* добавление тени футера */
+.page.theme_light .footer_title {
+  text-shadow: 4px 4px 0px #ff0070;
+}
+
 
 /* авто светлая, дублирование */
 @media (prefers-color-scheme: light) {
   :root {
     --bg-image: url(/images/cover-image-light.png);
+    --bg-color: white;
     --focus-color: #FFC2E6;
     --color-with-accent: #353430;
     --accent-color: #ff8dcb;
     --accent-color-hover: #32312d66;
-    --paragraph-font-color: #F1B2CE;
+    --paragraph-font-color: #353430;
     --border-button-color: #353430;
     --border-a-color: #353430;
+    --title-section-color: #353430;
   }
 /* пропадание декоративного элемента REC */
   .header__decoration {
     display: none;
   }
+
+  /* добавление тени футера */
+  .footer_title {
+    text-shadow: 4px 4px 0px #ff0070;
+  }
+
 }

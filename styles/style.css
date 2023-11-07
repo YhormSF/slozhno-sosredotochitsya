@@ -331,80 +331,6 @@
   line-height: 82.5%; /* 129.525px */
 }
 
-/* декоративные уголки */
-/* верхний */
-/* .decorated-zone::before:has(.footer) { */
-/* .footer .decorated-zone::before { */
-
-/* .footer_decorated-zone::before {
-  content: "";
-  position: relative;
-  top: 20px;
-  left: calc(100% - 25px);
-  display: block;
-  width: 25px;
-  height: 25px;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
-  inset-inline-end: var(--main-padding-decoration);
-  inset-block-start: var(--main-padding-decoration);
-} */
-
-/* нижний */
-/* .footer_decorated-zone::after {
-  content: "";
-  position: relative;
-  bottom: 80%;
-  display: block;
-  width: 25px;
-  height: 25px;
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
-} */
-
-
-/* ! для проверки разрешений */
-.header {
-  /* ! 1024 */
-  /* inline-size: 1024px;
-  block-size: 768px; */
-  
-  /* ! 768 */
-  /* width: 768px;
-  height: 1024px; */
-  
-  /* ! 375 */
-  /* width: 375px;
-  height: 668px; */
-  
-  /* block-size: 100vh; */
-  }
-  
-  .footer {
-  /* ! 1024 */
-  /* width: 1024px;
-  height: 768px; */
-  
-  /* ! 768 */
-  /* height: 1024px;
-  width: 768px; */
-  
-  /* ! 375 */
-  /* width: 375px;
-  height: 667px; */
-  
-  /* block-size: 100vh; */
-  }
-
-
-
-
-
-
-
-
-
-
 /* ! 1440 (1024) */
 @media (max-width: 1440px) {
   .header {
@@ -434,26 +360,12 @@
   .section-why {
     gap: 10px;
   }
-  
+
   .section-recommendation {
     gap: 10px;
   }
   .decorated-zone::after {
-    /* bottom: calc(15% - 5px); */
     grid-row: 3/3;
-    /* grid-column: 1/3; */
-    
-    bottom: 0%;
-  }
-
-  .footer_decorated-zone::after {
-    bottom: 10%;
-    left: -3px;
-  }
-
-  .footer_decorated-zone::before {
-    top: -10%;
-    left: calc(97% - -3px);
   }
 }
 
@@ -462,10 +374,6 @@
 
   .header__decoration::after {
     left: 110%;
-  }
-
-  .decorated-zone::after {
-    bottom: 3%;
   }
 }
 
@@ -509,11 +417,6 @@
     left: calc(90% + -4px);
   }
 
-  /* проблема при автотесте (было -53%) */
-  .decorated-zone::after {
-    bottom: 0%;
-  }
-
   .section-what_title {
     grid-template-columns: 1fr 3fr;
   }
@@ -529,15 +432,6 @@
   .section-recommendation {
     gap: 20px;
   }
-
-  .footer_decorated-zone::before {
-    inset: 0%;
-    justify-self: end;
-  }
-
-  .footer_decorated-zone::after {
-    bottom: 0%;
-  }
 }
 
 /* ! 576 (375) */
@@ -546,11 +440,6 @@
   .header__decoration {
     left: 82%;
   }
-
-  /* в пикселе нормально, но в автотесте она выше */
-  .decorated-zone::after {
-  bottom: 0%;
-}
 
   .header__theme-menu {
     justify-content: end;
@@ -598,12 +487,4 @@
     margin-block-end: 10px;
   }
 
-  .footer_decorated-zone::before {
-    inset: 0%;
-    justify-self: end;
-  }
-
-  .footer_decorated-zone::after {
-    bottom: 0%;
-  }
 }

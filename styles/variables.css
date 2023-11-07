@@ -3,14 +3,26 @@
   и их переопределение под различные устройства
 */
 
-/* общее */
+
 :root {
-  --main-font: 'IBM Plex Mono', 'Bold Regular';
+  /* общее */
+  --main-font: 'IBM Plex Mono', 'sans-serif';
   --focus-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --main-padding-decoration: 20px;
   --header-and-footer-margin-section: 60px;
   --main-margin-section: 80px;
   --section-img-margin: 20px;
+/* темная тема */
+--bg-image: url(../images/cover-image-dark.png);
+--bg-color: black;
+--focus-color: #DB00FF;
+--color-with-accent: #000028;
+--accent-color: #FF0070;
+--accent-color-hover: #ff007066;
+--paragraph-font-color: #F1B2CE;
+--border-button-color: #FF0070;
+--border-a-color: #F1B2CE;
+--title-section-color: #FF0070;
 }
 
 @media (max-width: 576px) {

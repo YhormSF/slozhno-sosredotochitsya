@@ -7,9 +7,9 @@
 }
 
 body {
+  margin: 0 auto;
   min-inline-size: 375px;
   max-inline-size: 1440px;
-  margin: 0 auto;
 }
 
 h1,
@@ -42,16 +42,15 @@ a {
 }
 
 button {
-  padding-left: 13px;
   padding-right: 13px;
-  }
+  padding-left: 13px;
+}
 
 /* сброс фокуса у кнопок и ссылок */
 button:focus,
 a:focus {
-outline: none;
+  outline: none;
 }
-
 
 /* фокус кнопок */
 button:focus-visible {
@@ -60,19 +59,18 @@ button:focus-visible {
 
 /* активная кнопка не будет реагировать и обводится */
 button:disabled {
-  pointer-events: none;
   border: 1px solid var(--border-button-color);
+  pointer-events: none;
 }
 
 button:hover {
   border: 1px solid var(--accent-color-hover);
 }
 
-
 /* стилизация ссылок */
 a {
   text-decoration-line: none;
-  text-shadow: 2px 2px 0px #FF0070;
+  text-shadow: 2px 2px 0px #ff0070;
 }
 
 a:focus-visible {

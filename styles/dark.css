@@ -11,14 +11,14 @@
   */
   --bg-image: url(../images/cover-image-dark.png);
   --bg-color: black;
-  --focus-color: #DB00FF;
+  --focus-color: #db00ff;
   --color-with-accent: #000028;
-  --accent-color: #FF0070;
+  --accent-color: #ff0070;
   --accent-color-hover: #ff007066;
-  --paragraph-font-color: #F1B2CE;
-  --border-button-color: #FF0070;
-  --border-a-color: #F1B2CE;
-  --title-section-color: #FF0070;
+  --paragraph-font-color: #f1b2ce;
+  --border-button-color: #ff0070;
+  --border-a-color: #f1b2ce;
+  --title-section-color: #ff0070;
 }
 
 /* включение декоративного элемента REC */
@@ -26,7 +26,7 @@
   display: block;
 }
 
- /* убирание тени футера */
+/* убирание тени футера */
 .page.theme_dark .footer_title {
   text-shadow: none;
 }
@@ -36,14 +36,14 @@
   :root {
     --bg-image: url(../images/cover-image-dark.png);
     --bg-color: black;
-    --focus-color: #DB00FF;
+    --focus-color: #db00ff;
     --color-with-accent: #000028;
-    --accent-color: #FF0070;
+    --accent-color: #ff0070;
     --accent-color-hover: #ff007066;
-    --paragraph-font-color: #F1B2CE;
-    --border-button-color: #FF0070;
-    --border-a-color: #F1B2CE;
-    --title-section-color: #FF0070;
+    --paragraph-font-color: #f1b2ce;
+    --border-button-color: #ff0070;
+    --border-a-color: #f1b2ce;
+    --title-section-color: #ff0070;
   }
 
   /* убирание тени футера */

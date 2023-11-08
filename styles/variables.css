@@ -5,13 +5,13 @@
 
 :root {
   /* общее */
-  --main-font: "IBM Plex Mono", "sans-serif";
+  --main-font: 'IBM Plex mono', monospace;
   --focus-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --main-padding-decoration: 20px;
   --header-and-footer-margin-section: 60px;
   --main-margin-section: 80px;
   --section-img-margin: 20px;
-  /* темная тема */
+  /* темная основная тема */
   --bg-image: url(../images/cover-image-dark.png);
   --bg-color: black;
   --focus-color: #db00ff;
